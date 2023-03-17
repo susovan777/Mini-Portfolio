@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Sacramento&display=swap');
+
+body {
+  margin: 0;
+  text-align: center;
+  color: #40514e;
+  /* font-size: 200px; */
+}
+
+.top-container{
+  background-color: #c4f2e7;
+  padding-top: 100px;
+  position: relative;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.title-text {
+  margin: 40px;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /* if we use font-size in pixel unit it will static size, means if we change the font size of browser in browser setting it will not change the font size of 'h1' element  */
+
+  /* font-size: 90px; */
+  
+  /* but if we want to make font size dynamic then we have to change unit as '%(percentage)' */
+  /* the default font-size is 16px i.e 100% and if we want to make dynamic font size so we have to set the font size 90px/16px*100 = 562.5% */
+
+  /* font-size: 562.5%; */
+  
+  /* another way of making dynamic font size is using 'em' unit, means 16px = 100% = 1em */
+
+  /* 'rem' unit also we can use which means 'root em' when we use it the parent font size doesn't affect it */
+
+  /* when we use font size in body for all text element it affects all text element but not get affected to the 'h1' element, so 'rem'  is the best unit to use for dynamic */
+  font-size: 5.62rem;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  /* if we want to set the font size to 40px using rem unit then we have to calculate like this 40px/16 = 2.5rem */
+  /* font-size: 40px; */
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  /* line-height: 2; */
+  padding-bottom: 5px;
+}
+
+.top-cld {
+  position: absolute;
+  right: 350px;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.bottom-cld {
+  position: absolute;
+  left: 300px;
+}
+
+h3, a {
+  color: #11999E;
+}
+
+hr{
+  border: dotted #c2ecec 6px;
+  border-bottom: none;
+  width: 10%;
+  margin: 100px auto;
+}
+
+p{
+  line-height: 2;
+  font-size: 1.1rem;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  
+}
+
+.chilli, .code {
+  width: 25%;
+}
+
+.chilli {
+  float: left;
+  margin-right: 30px;
+}
+
+.code {
+  float: right;
+  margin-left: 30px;
+}
+
+/* clear property removes the margin according to its value */
+/* for examle,
+.chilli-description {
+  clear: left;
+}
+
+.code-description {
+  clear: right;
+} */
+
+.contact-messege{
+  width: 40%;
+  margin: 20px auto 60px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 20px 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ab);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ab);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ab);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ab);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ab);
+  text-decoration: none;
+}
+
+.bottom-container{
+  background-color: #6fbfbf;
+  padding: 50px 0 20px;
+}
+
+a{
+  color: #11999E;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #eaf6f6;
+}
+
+.copyright{
+  color: #eaf6f6;
+  font-size: 0.8rem;
+}
